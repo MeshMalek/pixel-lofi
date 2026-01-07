@@ -27,6 +27,26 @@ class MusicPlayerCard extends StatelessWidget {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
+              // ٍStars
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    '✦',
+                    style: TextStyle(color: AppColors.accent, fontSize: 16),
+                  ),
+                  SizedBox(width: 40),
+                  Text(
+                    '✦',
+                    style: TextStyle(color: Colors.white24, fontSize: 12),
+                  ),
+                  SizedBox(width: 40),
+                  Text(
+                    '✦',
+                    style: TextStyle(color: AppColors.accent, fontSize: 14),
+                  ),
+                ],
+              ),
               // 🎧 Album cover + Cat
               Container(
                 height: 180,
