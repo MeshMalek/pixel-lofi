@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../../core/theme/app_colors.dart';
 import '../widgets/music_player_card.dart';
+import '../widgets/pixel_icons.dart';
 
 class MusicPage extends StatefulWidget {
   const MusicPage({super.key});
@@ -54,6 +55,26 @@ class _MusicPageState extends State<MusicPage> {
                     ),
                   ],
                 ),
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  PixelIconButton(
+                    icon: Icons.fast_rewind,
+                    onTap: () => print("رجوع"),
+                    isSmall: true,
+                  ),
+                  PixelIconButton(
+                    icon: Icons.play_arrow,
+                    onTap: () => print("تشغيل"),
+                    isPrimary: true,
+                  ),
+                  PixelIconButton(
+                    icon: Icons.fast_forward,
+                    onTap: () => print("تخطي"),
+                    isSmall: true,
+                  ),
+                ],
               ),
             ],
           ),
