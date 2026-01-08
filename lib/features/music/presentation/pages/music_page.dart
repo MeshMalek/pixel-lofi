@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../../../../core/theme/app_colors.dart';
 import '../widgets/music_player_card.dart';
 import '../widgets/pixel_icons.dart';
 
@@ -26,36 +25,6 @@ class _MusicPageState extends State<MusicPage> {
               const SizedBox(height: 12),
 
               // progress Bar
-              Slider(
-                value: 0.3,
-                onChanged: (v) {},
-                activeColor: AppColors.accent,
-                inactiveColor: Colors.white12,
-              ),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 20),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text(
-                      "01:20",
-                      style: TextStyle(
-                        fontFamily: 'PixelFont',
-                        fontSize: 12,
-                        color: Colors.white38,
-                      ),
-                    ),
-                    Text(
-                      "03:45",
-                      style: TextStyle(
-                        fontFamily: 'PixelFont',
-                        fontSize: 12,
-                        color: Colors.white38,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
